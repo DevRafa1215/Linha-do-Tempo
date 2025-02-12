@@ -1,0 +1,120 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    grid-area: nav;
+    text-align: center;
+    font-size: 25px;
+}
+
+.img-navbar {
+    height: 100px;
+    width:100px;
+    grid-area: logo;
+}
+
+.navbar .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.navbar .logo:hover {
+    transform: rotateY(180dge)
+
+}
+
+
+.navbar .logo {
+    transition: transform 1s ease-in-out
+    /*transform-style: preserve-3d;*/
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+}
+
+.nav-links li {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px;
+}
+
+.container{
+    grid-template-areas: 
+    'logo logo logo'
+    'nav nav nav'
+    'div1 div1 div1'
+    'div1 div1 div1'
+    'div2 div2 div2';
+}
+
+#corpo{
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+}
+
+#div1{
+    color: white;
+    text-align: center;
+    background-color: black;
+    height: 550px;
+    grid-area: div1;
+}
+
+#creta{
+    color: white;
+}
+
+#media{
+    color: white
+}
+
+#comtem{
+    color: white;
+}
+
+#div2{
+    grid-area: div2;
+    height: 80px;
+    background-color: black;
+}
+
+#discricao{
+    color: white;
+    text-align: justify;
+    background-color: black;
+}
+
+#email{
+    font-size: 20px;
+    color: rgb(255, 116, 116);
+}
+
+.conteudo {
+    font-size: 20px;
+}
+
+#encontrar {
+    font-size: 25px;
+}
